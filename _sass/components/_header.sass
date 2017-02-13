@@ -1,0 +1,76 @@
+body
+  background: #67B8C1
+  .wrapper
+    background: #ffffff
+    width: 100%
+    max-width: 1200px
+    margin-left: auto
+    margin-right: auto
+    min-height: 100vh 
+.header
+  background: url(/assets/design/header-background.png) no-repeat left top
+  width: 100%
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  min-height: 628px 
+  background-size: 1200px 628px
+  display: flex
+  justify-content: space-around
+  flex-direction: column
+  +breakpoint(medium)
+    flex-direction: row
+  padding: 50px 50px 0 50px
+  .text
+    align-self: center
+    +breakpoint(medium)
+      align-self: flex-start
+    width: 382px
+    h1
+      font-family: 'Shrikhand', cursive
+      font-size: 55px
+      line-height: 50px
+      +breakpoint(medium)
+        font-size: 72px
+        line-height: 60px
+      color: #E37222
+      margin-bottom: 0
+    h2
+      font-family: $secondary-font
+      font-weight: bold
+      font-size: 50px 
+      color: #67B8C1
+      margin-bottom: 50px 
+    p 
+      font-size: 28px
+      color: #08899E
+        
+  .img 
+    background: url(/assets/design/mac.png) no-repeat center center
+    background-size: contain
+    width: 672px
+    max-width: 100%
+    min-height: 415px
+    max-height: 415px
+    align-self: center
+    align-items: flex-start
+    +breakpoint(medium)
+      align-self: flex-end
+      align-items: center
+    display: flex
+    justify-content: center
+    
+    a
+      width: 324px
+      height: 83px
+      background: #67B8C1
+      border: 3px solid #000000
+      color: #000000
+      text-transform: uppercase
+      font-size: 24px
+      line-height: 83px
+      padding: 0
+      
+    
+  
+  

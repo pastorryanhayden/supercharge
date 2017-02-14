@@ -3,14 +3,19 @@
 	background: url(/assets/design/overview-background.png) no-repeat center top;
 	min-height: 1100px;
 	text-align: center;
-	padding: 230px 50px 50px 50px;
+	padding: 180px 50px 50px 50px;
+	@include breakpoint(medium){
+		padding: 230px 50px 50px 50px;
+	}
 	h2 {
 		max-width: 782px;
 		margin-left: auto;
 		margin-right: auto;
 		font-weight: bold;
 		color: #E37222;
-		font-size: 50px;
+		@include breakpoint(medium){
+		font-size: 50px;			
+		}
 		margin-bottom: 70px;
 	}//h2
 	.apps {
@@ -37,13 +42,18 @@
 		max-width: 780px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 30px;
+		@include breakpoint(medium){
+		font-size: 30px;		
+		}
 		color: #08899E;
 		margin-bottom: 70px;
 	}//p.details
-	a.button.hollow {
+	a.button {
 		color: #08899E;
+		background: transparent;
+		@include breakpoint(medium){
 		font-size: 28px;
+		}
 		text-transform: uppercase;
 		border: 3px solid #08899E;
 	}//a.button.hollow

@@ -1,0 +1,25 @@
+.close-ad {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #000000;
+	color: #B7B7B7;
+	a.ad-image {
+		margin-bottom: 30px;
+		display: block;
+	}
+	
+	p {
+		max-width: 840px;
+		text-align: center;
+		font-size: 30px;
+		
+		a {
+			color: #B7B7B7;
+		}
+	}
+	
+}//close-ad

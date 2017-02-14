@@ -1,0 +1,62 @@
+.about-me {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
+	@include breakpoint(medium){
+		padding: 50px;
+	}
+	
+	.wrapper {
+		display: flex;
+		min-height: 545px;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}//.wrapper
+	
+	.img {
+		width: 100%;
+		z-index: 0;
+		@include breakpoint(1123px){
+		align-self: top;
+		order: 2;
+		width: 489px;
+		height: 419px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+			
+			
+		}
+	}//img
+	
+	.text {
+		background: #F1AA7E;
+		padding: 30px;
+		max-width: 100%;
+		z-index: 1;
+		align-self: bottom;
+		@include breakpoint(medium){
+			max-width: 625px;
+			margin-right: -200px;
+			margin-top: -80px;
+		}
+		@include breakpoint(1123px){
+			order: 1;
+			min-height: 408px;
+			margin-top: 90px;
+			margin-right: -80px;
+		}
+		
+		p {
+			font-size: 26px;
+			color: $white;
+			text-align: justify;
+		}
+		
+	}//text
+	
+}//.about-me

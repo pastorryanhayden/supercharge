@@ -44,7 +44,7 @@ video_url: #
       <p>Organize and track your church prayer requests.</p>
     </div><!--/single-video --->
   </div><!--/videos-->
-  <a href="#" class="button hollow"><i class="fa fa-play-circle"></i> Get Free Access</a>
+  <a href="#" class="button button2"><i class="fa fa-play-circle"></i> Get Free Access</a>
 </div><!--/video-tease --->
 <div class="overview">
   <h2>These two free apps will give you organizational super powers!</h2>
@@ -63,5 +63,45 @@ video_url: #
   <p class="details">
     And I’ll show you how to use them in practical ways in your church.  Not only will you learn the basics of using these apps - <strong>you’ll get several free templates you can copy to get you started.
   </strong></p>
-  <a href="#" class="hollow button"><i class="fa fa-play-circle"></i> Get Free Access</a>
+  <a href="#" class="button button3"><i class="fa fa-play-circle"></i> Get Free Access</a>
 </div><!--/overview --->
+<div class="about-me">
+  <div class="wrapper">
+    <div class="img">
+  <img src="/assets/design/ryan.png" alt="Ryan Hayden and Family">
+  </div><!--/img-->
+  <div class="text">
+    <p>Ryan Hayden is a web designer and tech expert who loves helping pastors and other ministers leverage tech for the gospel. </p>
+    <p>Ryan serves as the Senior Pastor at Bible Baptist Church in Mattoon, IL, prior to that, he worked as a Christian school teacher, camp director, and childrens pastor.
+   </p>
+  </div><!--/text --->
+  </div><!--/wrapper --->
+</div><!--/about-me --->
+<div class="close-ad">
+  <a class="ad-image" href="http://ryanhaydenwebsites.com"><img src="/assets/design/logo.png" alt=""></a>
+  <p>I help churches, missionaries and businesses get affordable websites that work for them.
+  <br>
+  <a href="http://ryanhaydenwebsites.com">www.ryanhaydenwebsites.com</a></p>
+</div><!--/close-ad --->
+<div class="modal hidden">
+  <div class="modal-box">
+    <h3>Sign Up For Our Newsletter For Free Access</h3>
+    <p>Access to these videos should hit your email inbox within five minutes.</p>
+  </div><!--/modal-box --->
+</div><!--/modal-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.button').addEventListener('click', function(){
+                document.querySelector('.modal').classList.remove('hidden');
+        });
+        document.querySelector('.button3').addEventListener('click', function(){
+                document.querySelector('.modal').classList.remove('hidden');
+        });
+        document.querySelector('.button2').addEventListener('click', function(){
+                document.querySelector('.modal').classList.remove('hidden');
+        });
+        document.querySelector('.modal-toggle').addEventListener('click', function(){
+                document.querySelector('.modal').classList.add('hidden');
+        });
+    });
+</script>

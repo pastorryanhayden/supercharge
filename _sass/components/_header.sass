@@ -52,24 +52,28 @@ body
     max-width: 100%
     min-height: 415px
     max-height: 415px
+    margin-top: 30px
     align-self: center
     align-items: flex-start
     +breakpoint(medium)
       align-self: flex-end
       align-items: center
+      margin-top: 0
     display: flex
     justify-content: center
     
     a
-      width: 324px
-      height: 83px
       background: #67B8C1
       border: 3px solid #000000
       color: #000000
       text-transform: uppercase
-      font-size: 24px
-      line-height: 83px
-      padding: 0
+      +breakpoint(medium)
+        font-size: 24px
+        padding: 0
+        line-height: 83px
+        width: 324px
+        height: 83px
+  
       
     
   
